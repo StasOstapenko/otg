@@ -18,19 +18,12 @@ map.getPane('search_pane').style.zIndex = 200;
 map.getPane('search_pane').style.pointerEvents = 'none';
 
 //BASEMAPS
-L.tileLayer('https://api.mapbox.com/styles/v1/mykola-kozyr/cj47dr6zg117v2rlsm62ctk8x/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXlrb2xhLWtvenlyIiwiYSI6ImNpemNzeHBhaDAwNHkycW8wZm40OHptdTMifQ.6q-bTx4fwm9Ch-knzk1i3Q', {
+L.tileLayer('https://tiles.openstreetmap.org.ua/osm/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: '<a href="http://tdukr.com/uk/">Товариство дослідників України</a> | ' + 
                     '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors | ' +
                     'Imagery © <a href="http://mapbox.com">Mapbox</a>',
     id: 'mapbox.streets',
-}).addTo(map);
-
-//labels' basemap
-L.tileLayer('https://api.mapbox.com/styles/v1/mykola-kozyr/cj4tlgr7d0j0l2spgztk8jkut/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXlrb2xhLWtvenlyIiwiYSI6ImNpemNzeHBhaDAwNHkycW8wZm40OHptdTMifQ.6q-bTx4fwm9Ch-knzk1i3Q', {
-    maxZoom: 18,
-    id: 'mapbox.labels',
-    pane: 'labels_pane'
 }).addTo(map);
 
 // SIDEBAR
